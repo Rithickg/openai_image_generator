@@ -16,7 +16,7 @@ export default function TextCompletion() {
         }else{
             setLoader(!loader);
             try {
-                const response= await axios.post('https://openaiimagegeneratorapi-production.up.railway.app/openai/textcompletion',{
+                const response= await axios.post('https://openai-image-generator-api.onrender.com/openai/textcompletion',{
                     prompt:text,
                 })
                 console.log(response)

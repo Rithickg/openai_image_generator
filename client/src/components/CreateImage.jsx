@@ -22,7 +22,7 @@ export default function CreateImage() {
                 setLoader(!loader);
             }
             try {
-              const response = await axios.post('https://openaiimagegeneratorapi-production.up.railway.app/openai/generateimage',{
+              const response = await axios.post('https://openai-image-generator-api.onrender.com/openai/generateimage',{
                     prompt:imgText,
                     size:imgSize
                 })
